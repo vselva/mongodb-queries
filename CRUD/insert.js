@@ -27,7 +27,7 @@ db.employees.insertMany([
     },
     {
         name: 'Narumugai', 
-        age: 8, 
+        age: 8,
         address: {
             location: 'Madras',
             pincode: '600001',
@@ -40,6 +40,24 @@ db.employees.insertMany([
         address: {
             location: 'Madras',
             pincode: '600001',
+            country: 'India'
+        }
+    },
+    {
+        name: 'Santhosh', 
+        age: 19, 
+        address: {
+            location: 'Redhills',
+            pincode: '600052',
+            country: 'India'
+        }
+    },
+    {
+        name: 'Satheesh', 
+        age: 18, 
+        address: {
+            location: 'Guduvangery',
+            pincode: '600152',
             country: 'India'
         }
     }
