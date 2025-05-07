@@ -25,6 +25,11 @@ db.employees.find({
 });
 
 ///////////////////////////////////////
-// delete many documents
+// delete all documents
 db.employees.deleteMany({});
+db.products.deleteMany({});
+db.departments.deleteMany({});
+
 db.employees.find();
+db.products.find();
+db.departments.find();
