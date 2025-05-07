@@ -19,6 +19,3 @@ db.employees.find(
         'address.location': 'Chennai'
     }
 );
-
-// find the documents and limit to the count passed
-db.employees.find({name: 'Selva'}).limit(2);

@@ -33,6 +33,15 @@ db.employees.insertMany([
             pincode: '600001',
             country: 'India'
         }
+    },
+    {
+        name: 'Nasir', 
+        age: 40, 
+        address: {
+            location: 'Madras',
+            pincode: '600001',
+            country: 'India'
+        }
     }
 ]);
 
