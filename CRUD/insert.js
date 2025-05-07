@@ -8,7 +8,8 @@ db.employees.insertOne(
         age: 24,
         address: {
             location: 'Marthandam',
-            picode: '683672'
+            pincode: '683672',
+            country: 'UK'
         }
     }
 );
@@ -20,7 +21,8 @@ db.employees.insertMany([
         age: 30,
         address: {
             location: 'Madras',
-            pincode: '600127'
+            pincode: '600127',
+            country: 'India'
         }
     },
     {
@@ -28,7 +30,8 @@ db.employees.insertMany([
         age: 8, 
         address: {
             location: 'Madras',
-            pincode: '600001'
+            pincode: '600001',
+            country: 'India'
         }
     }
 ]);
