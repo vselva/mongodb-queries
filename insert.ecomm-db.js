@@ -21,14 +21,15 @@ db.customers.insertMany([
             pincode: '600127',
             country: 'India'
         },
-        purchases: [101, 102]
+        purchases: [101, 102],
+        additionafield: 'For Testing' // to check $exists (elemental operator)
     },
     {
         name: 'Diana',
         email: 'diana@example.com',
         phone: '9876543210',
         isActive: true,
-        age: 27,
+        age: '27', // kept non integer value in age, to check $type (elemental operator)
         address: {
             street: '12 Elm Street',
             city: 'Bangalore',
