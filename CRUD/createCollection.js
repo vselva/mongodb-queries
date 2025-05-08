@@ -29,4 +29,4 @@ db.departments.insertMany([
     {name: 'Sales'} // this only will exist and R&D and HR will get removed. 
 ]);
 
-db.departments.find({}, {_id:0}).pretty();
+db.departments.find({ }, { _id: 0 }).pretty();
