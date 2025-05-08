@@ -21,7 +21,7 @@ db.customers.insertMany([
             pincode: '600127',
             country: 'India'
         },
-        purchases: [101, 102] // Array of product IDs
+        purchases: [101, 102]
     },
     {
         name: 'Diana',
@@ -36,7 +36,7 @@ db.customers.insertMany([
             pincode: '560001',
             country: 'India'
         },
-        purchases: [103, 104] // Array of product IDs
+        purchases: [103, 104]
     },
     {
         name: 'Ravi',
@@ -51,7 +51,7 @@ db.customers.insertMany([
             pincode: '625001',
             country: 'India'
         },
-        purchases: [105] // Array of product IDs
+        purchases: [105]
     },
     {
         name: 'Anita',
@@ -66,7 +66,7 @@ db.customers.insertMany([
             pincode: '641001',
             country: 'India'
         },
-        purchases: [106] // Array of product IDs
+        purchases: [106]
     },
     {
         name: 'Imran',
@@ -81,7 +81,7 @@ db.customers.insertMany([
             pincode: '500001',
             country: 'India'
         },
-        purchases: [107, 108] // Array of product IDs
+        purchases: [107, 108]
     }
 ]);
 
