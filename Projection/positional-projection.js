@@ -1,20 +1,22 @@
+use office
+
 // Positional Projection 
 db.orders.insertMany([
     {
         _id: 1,
         customer: "Selva",
         items: [
-        { name: "apple", qty: 5 },
-        { name: "banana", qty: 3 },
-        { name: "orange", qty: 7 }
+            { name: "apple", qty: 5 },
+            { name: "banana", qty: 3 },
+            { name: "orange", qty: 7 }
         ]
     },
     {
         _id: 2,
         customer: "Kumar",
         items: [
-        { name: "banana", qty: 2 },
-        { name: "apple", qty: 1 }
+            { name: "banana", qty: 2 },
+            { name: "apple", qty: 1 }
         ]
     }
 ]);
@@ -27,7 +29,7 @@ db.orders.find(
 // find with positional projection => displayes only apple 
 db.orders.find(
     { "items.name": "apple" },
-    { "items.$": 1 }
+    { "items.$": true }
 );
 
 // finally clear the orders collection
