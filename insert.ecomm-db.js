@@ -98,12 +98,53 @@ db.products.insertMany([
 
 // Insert 5 orders
 db.orders.insertMany([
-    { customerEmail: 'selva@example.com', productName: 'Wireless Mouse', quantity: 1, orderDate: new Date('2024-08-01'), status: 'shipped' },
-    { customerEmail: 'diana@example.com', productName: 'Bluetooth Headphones', quantity: 2, orderDate: new Date('2024-08-03'), status: 'processing' },
-    { customerEmail: 'ravi@example.com', productName: 'Cotton T-Shirt', quantity: 3, orderDate: new Date('2024-08-05'), status: 'cancelled' },
-    { customerEmail: 'anita@example.com', productName: 'Smart Watch', quantity: 1, orderDate: new Date('2024-08-07'), status: 'delivered' },
-    { customerEmail: 'imran@example.com', productName: 'Laptop Sleeve', quantity: 2, orderDate: new Date('2024-08-09'), status: 'shipped' }
+    { 
+      customerEmail: 'selva@example.com', 
+      productName: 'Wireless Mouse', 
+      quantity: 1, 
+      orderDate: new Date('2024-08-01'), 
+      status: 'shipped',
+      amountPaid: 25.99,
+      amountDue: 0.00
+    },
+    { 
+      customerEmail: 'diana@example.com', 
+      productName: 'Bluetooth Headphones', 
+      quantity: 2, 
+      orderDate: new Date('2024-08-03'), 
+      status: 'processing',
+      amountPaid: 0.00,
+      amountDue: 89.98
+    },
+    { 
+      customerEmail: 'ravi@example.com', 
+      productName: 'Cotton T-Shirt', 
+      quantity: 3, 
+      orderDate: new Date('2024-08-05'), 
+      status: 'cancelled',
+      amountPaid: 0.00,
+      amountDue: 0.00
+    },
+    { 
+      customerEmail: 'anita@example.com', 
+      productName: 'Smart Watch', 
+      quantity: 1, 
+      orderDate: new Date('2024-08-07'), 
+      status: 'delivered',
+      amountPaid: 149.99,
+      amountDue: 0.00
+    },
+    { 
+      customerEmail: 'imran@example.com', 
+      productName: 'Laptop Sleeve', 
+      quantity: 2, 
+      orderDate: new Date('2024-08-09'), 
+      status: 'shipped',
+      amountPaid: 30.00,
+      amountDue: 0.00
+    }
 ]);
+  
 
 // Optional: Show all collections
 show collections;
