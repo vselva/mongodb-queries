@@ -8,12 +8,83 @@ db.orders.drop();
 
 // Insert 5 customers
 db.customers.insertMany([
-    { name: 'Selvakumar', email: 'selva@example.com', phone: '9876501123', isActive: true },
-    { name: 'Diana', email: 'diana@example.com', phone: '9876543210', isActive: true },
-    { name: 'Ravi', email: 'ravi@example.com', phone: '9876512345', isActive: false },
-    { name: 'Anita', email: 'anita@example.com', phone: '9876523456', isActive: true },
-    { name: 'Imran', email: 'imran@example.com', phone: '9876534567', isActive: true }
+    {
+        name: 'Selvakumar',
+        email: 'selva@example.com',
+        phone: '9876501123',
+        isActive: true,
+        age: 35,
+        address: {
+            street: '101 Mount Road',
+            city: 'Chennai',
+            state: 'Tamil Nadu',
+            pincode: '600127',
+            country: 'India'
+        },
+        purchases: [101, 102] // Array of product IDs
+    },
+    {
+        name: 'Diana',
+        email: 'diana@example.com',
+        phone: '9876543210',
+        isActive: true,
+        age: 27,
+        address: {
+            street: '12 Elm Street',
+            city: 'Bangalore',
+            state: 'Karnataka',
+            pincode: '560001',
+            country: 'India'
+        },
+        purchases: [103, 104] // Array of product IDs
+    },
+    {
+        name: 'Ravi',
+        email: 'ravi@example.com',
+        phone: '9876512345',
+        isActive: false,
+        age: 15,
+        address: {
+            street: '5 Gandhi Street',
+            city: 'Madurai',
+            state: 'Tamil Nadu',
+            pincode: '625001',
+            country: 'India'
+        },
+        purchases: [105] // Array of product IDs
+    },
+    {
+        name: 'Anita',
+        email: 'anita@example.com',
+        phone: '9876523456',
+        isActive: true,
+        age: 63,
+        address: {
+            street: '78 Lake View Road',
+            city: 'Coimbatore',
+            state: 'Tamil Nadu',
+            pincode: '641001',
+            country: 'India'
+        },
+        purchases: [106] // Array of product IDs
+    },
+    {
+        name: 'Imran',
+        email: 'imran@example.com',
+        phone: '9876534567',
+        isActive: true,
+        age: 42,
+        address: {
+            street: '99 Beach Road',
+            city: 'Hyderabad',
+            state: 'Telangana',
+            pincode: '500001',
+            country: 'India'
+        },
+        purchases: [107, 108] // Array of product IDs
+    }
 ]);
+
 
 // Insert 5 products
 db.products.insertMany([
