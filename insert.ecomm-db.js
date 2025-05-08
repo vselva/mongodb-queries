@@ -86,14 +86,37 @@ db.customers.insertMany([
     }
 ]);
 
-
-// Insert 5 products
 db.products.insertMany([
-    { name: 'Wireless Mouse', price: 1299, inStock: true },
-    { name: 'Bluetooth Headphones', price: 4999, inStock: true },
-    { name: 'Cotton T-Shirt', price: 799, inStock: false },
-    { name: 'Smart Watch', price: 9999, inStock: true },
-    { name: 'Laptop Sleeve', price: 599, inStock: true }
+    { 
+        name: 'Wireless Mouse', 
+        price: 1299, 
+        inStock: true, 
+        tags: ['electronics', 'accessory', 'wireless']
+    },
+    { 
+        name: 'Bluetooth Headphones', 
+        price: 4999, 
+        inStock: true, 
+        tags: ['electronics', 'audio', 'wireless']
+    },
+    { 
+        name: 'Cotton T-Shirt', 
+        price: 799, 
+        inStock: false, 
+        tags: ['clothing', 'cotton', 'apparel']
+    },
+    { 
+        name: 'Smart Watch', 
+        price: 9999, 
+        inStock: true, 
+        tags: ['electronics', 'wearable', 'smart']
+    },
+    { 
+        name: 'Laptop Sleeve', 
+        price: 599, 
+        inStock: true, 
+        tags: ['accessory', 'laptop', 'protection']
+    }
 ]);
 
 // Insert 5 orders
