@@ -1,0 +1,9 @@
+// $where is a MongoDB query operator that allows you to use JavaScript expressions to filter documents.
+use ecommerce
+
+// get major (age > 18) customers
+db.customers.find({ $where: "this.age > 18" }, { _id: 0, name: 1, age: 1, "address.city": 1 });
+
+// get major (age > 18) customers from Chennai
+db.customers.find({ $where: "this.age > 18 && this.address.city == 'Chennai'" }, { _id: 0, name: 1, age: 1, "address.city": 1 });
+

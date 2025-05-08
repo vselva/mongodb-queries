@@ -13,7 +13,7 @@ db.customers.insertMany([
         email: 'selva@example.com',
         phone: '9876501123',
         isActive: true,
-        age: 35,
+        age: 24,
         address: {
             street: '101 Mount Road',
             city: 'Chennai',
@@ -112,11 +112,17 @@ db.products.insertMany([
         tags: ['electronics', 'wearable', 'smart']
     },
     { 
+        name: 'Analog Watch', 
+        price: 999, 
+        inStock: true, 
+        tags: ['wearable', 'mechanical']
+    },
+    { 
         name: 'Laptop Sleeve', 
         price: 599, 
         inStock: true, 
         tags: ['accessory', 'laptop', 'protection']
-    }
+    },
 ]);
 
 // Insert 5 orders
@@ -167,7 +173,9 @@ db.orders.insertMany([
       amountDue: 0.00
     }
 ]);
-  
+
+// Create indexes on product names
+db.products.createIndex({ name: 'text' });
 
 // Optional: Show all collections
 show collections;
