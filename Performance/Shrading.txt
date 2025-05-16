@@ -1,0 +1,3 @@
+In MongoDB, sharding is a technique used to distribute data across multiple servers (shards) 
+to handle large datasets and high user loads efficiently. 
+

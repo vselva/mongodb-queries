@@ -1,0 +1,21 @@
+Use $match / $sort early
+Ensure $match / $sort uses indexes properly 
+
+Avoid using $project before $match 
+Avoid using $group before $match 
+- Because after $project / $group index usage will be dropped
+
+Limit $lookup / $unwind usage 
+$lookup to use localField / foriegnField to use indexed field
+
+Use $facet wisely 
+
+Use $limit / $skip carefully 
+
+Avoid large group aggregation 
+
+Use Allow "allowDiskUse" in aggregate (as second option) for large $group and $sort operations
+use .explain("executionStats");
+use .explain("allPlansExecution");
+
+

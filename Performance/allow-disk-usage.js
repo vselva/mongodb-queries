@@ -2,7 +2,7 @@
 // to write data to temporary disk files if memory limits are exceeded 
 // during the aggregation operation.
 
-use aggregate
+use performance
 
 db.products.aggregate(
     [

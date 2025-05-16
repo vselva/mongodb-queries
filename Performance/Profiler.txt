@@ -1,0 +1,8 @@
+MongoDB Profiler 
+- is a build-in tool that helps 
+- to monitor, analyse, database operations
+- to understand the performance operations
+- tracks queries, updates, delete, and other operations (how long they take and resources consumed)
+
+- Command:
+db.system.profile.find().sort({ts: 1}).limit(5).pretty()
