@@ -1,5 +1,6 @@
 // switch to database office
-use office;
+use crud;
+db.dropDatabase();
 
 // insert one document to employees collection
 db.employees.insertOne({

@@ -1,5 +1,5 @@
 // switch to database office
-use office
+use crud
 
 // show only first 2 entries from employees table
 db.employees.find({}).limit(2);

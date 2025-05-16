@@ -63,10 +63,37 @@ db.products.insertMany([
     updatedAt: new Date()
   },
   {
+    name: "Track Pant",
+    description: "Cotton Track Pant in various sizes",
+    price: 29.99,
+    stock: 200,
+    category: "clothing",
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
     name: "Book: Learn Node.js",
     description: "Beginner's guide to Node.js",
     price: 29.99,
-    stock: 50,
+    stock: 300,
+    category: "books",
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    name: "Book: Learn React",
+    description: "Beginner's guide to React",
+    price: 39.99,
+    stock: 400,
+    category: "books",
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    name: "Book: Learn MongoDB",
+    description: "Beginner's guide to MongoDB",
+    price: 39.99,
+    stock: 400,
     category: "books",
     createdAt: new Date(),
     updatedAt: new Date()

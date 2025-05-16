@@ -13,5 +13,3 @@ db.customers.find({ purchases: { $in: [101, 103] } }, { _id: 0, name: 1, email: 
 
 // with regular expressions - name starting with A and S
 db.customers.find({ name: { $in: [/^A/, /^S/] }}, { _id: 0, name: 1, email: 1}).pretty(); // => Selva, Anita
-
-

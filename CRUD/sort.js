@@ -1,5 +1,5 @@
 // switch to database office
-use office
+use crud
 
 // sort by name - ascedning 
 db.employees.find().sort({name: 1});

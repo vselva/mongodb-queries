@@ -1,5 +1,5 @@
 // switch to database office
-use office
+use crud
 
 ///////////////////////////////////////
 // delete one document 

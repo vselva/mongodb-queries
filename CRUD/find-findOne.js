@@ -1,5 +1,5 @@
 // switch to database office
-use office
+use crud
 
 // find all documents in the collection employees
 db.employees.find();

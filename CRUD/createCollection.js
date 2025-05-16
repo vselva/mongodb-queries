@@ -1,5 +1,5 @@
 // switch to database messages
-use office
+use crud
 
 // clear existing collections
 db.stocks.drop();
