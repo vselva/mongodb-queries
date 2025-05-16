@@ -1,6 +1,9 @@
 // the $match stage in an aggregation pipeline.
 // It is used to filter documents based on specific conditions, 
 // similar to a find() query but within the aggregation framework
+
+// db.users.aggregate([ { $match: { email: 'vselva@gmail.com' }} ]) === equal-to ===> db.users.find({ email: 'vselva@gmail.com' })
+
 use aggregate
 
 db.users.aggregate([
