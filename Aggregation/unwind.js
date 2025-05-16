@@ -1,6 +1,8 @@
 // $unwind:
-// The $unwind stage deconstructs an array field from the input (user) documents to output a document 
-// for each element of the array. It is commonly used after $lookup to flatten the resulting array.
+// The $unwind stage deconstructs an array field 
+// from the input (user) documents to output a document 
+// for each element of the array. 
+// It is commonly used after $lookup to flatten the resulting array.
 
 use aggregate
 

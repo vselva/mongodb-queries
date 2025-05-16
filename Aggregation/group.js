@@ -2,14 +2,15 @@
 use aggregate
 
 // $group
-db.products.aggregate([
+const group = db.products.aggregate([
     {
         $group: {
             _id: "$category" // grouping key 
-        },
-
+        }
     }
 ]);
+
+console.log(group);
 
 // $sum -- accumulator to sum 
 db.products.aggregate([

@@ -1,5 +1,6 @@
 // $lookup:
-// In aggregatin pipeline, the $lookup stage is used to perform a join between two collections.
+// In aggregatin pipeline, 
+// the $lookup stage is used to perform a join between two collections.
 
 use aggregate
 
