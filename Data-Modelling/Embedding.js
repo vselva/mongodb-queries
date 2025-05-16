@@ -3,13 +3,14 @@
 // - when mostly accessed together 
 // - one to one or one to many relationships
 // - when bouded data 
+// - 16 MB limit
 
 use dataModelling
 
 // insert embedded data 
 db.user.insertOne({
-    name: 'Selva',
-    age: 24,
+    name: 'Diana',
+    age: 20,
     orders: [
         { item: "Book", price: 200 },
         { item: "Pen", price: 10 }
